@@ -1,0 +1,42 @@
+%!TEX options = --shell-escape
+
+
+\documentclass[doctor]{thesis-uestc}
+
+\title{时域积分方程时间步进算法及其快速算法}
+\author{张三}
+\advisor{李四 \hspace{0.2in} 副教授}
+\school{XX学院}
+\major{XXXXX}
+\studentid{2015xxxxxx}
+
+\begin{document}
+
+\makecover  %封面
+
+% abstract
+\include{misc/chinese_abstract} %中文摘要
+\include{misc/english_abstract} %英文摘要
+
+% table of contents
+\thesistableofcontents   %目录
+% thesis contents
+\include{chapter/exordium}  %第一章 绪论
+\include{chapter/c2}        %第二章
+\include{chapter/c3}        %第三章
+\include{chapter/c4}        %第四章
+\include{chapter/c5}        %第五章
+%\include{chapter/template} %若需添加第六章请用这个模板修改
+
+% misc
+\include{misc/acknowledgement}  %致谢
+\thesisloadbibliography[nocite]{reference}  %参考文献
+
+
+% comment while no need
+\include{misc/appendix}   %附录，论文若无附录则用%将该命令取消
+\thesisloadachievement{publications}  %攻读学位期间取得的成果，若无成果则用%将该命令取消
+\include{misc/translate_original}  %外文资料原文，论文若未引用外文资料则用%将该命令取消
+\include{misc/translate_chinese}   %外文资料译文，论文若未引用外文资料则用%将该命令取消
+
+\end{document}
